@@ -12,8 +12,8 @@ provider:
   runtime: nodejs6.10
   profile: bernd-personal
   environment:
-    SEC_GROUP_ID: 'sg-978b82ea'
-    SSH_KEY: 'tanda_ec2'
+    SEC_GROUP_ID: 'sg-xxxxxxxx'
+    SSH_KEY: 'key_pair_name'
 
 functions:
   hook:

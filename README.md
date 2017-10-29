@@ -16,7 +16,7 @@ To deploy this you need to install the [Serverless](https://serverless.com/) Fra
 
 2. Update the `serverless.yml` file
 
-  You need to provide an AWS Security Group id and Key Pair name. To make it easy to update these I define them under `environment` in the `serverless.yml` file.
+  You need to provide an AWS Security Group id and Key Pair name. To make it easy to update these I define them under `environment` as `SEC_GROUP_ID` and `SSH_KEY` respectively, in the `serverless.yml` file.
 
   The Security Group id is used to allow SSH access on port 22 for the created EC2 instances.
 
