@@ -63,3 +63,4 @@ It would be great to know if something is unclear or doesn't work as I have desc
 - Dockerize - spin up server with fresh copy of codebase, database/s and any other resources
 - Automatically configure the machine based on users preferences (e.g. their dotfiles)
 - Improved key pair management
+
