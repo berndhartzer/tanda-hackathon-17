@@ -6,7 +6,7 @@ The 2017 Tanda Hackathon in Brisbane went for about 24 hours between the 27th an
 
 Use case: a developer comes in to work and clocks in, this triggers the creation of an EC2 instance for them to work from. This instance is tagged with their `user_id` and `shift_id` which the Tanda Webhook provides in the POST body. When the developer clocks out; their EC2 instance is terminated.
 
-## Set up
+## How to deploy
 
 *Pre-requisites*
 
