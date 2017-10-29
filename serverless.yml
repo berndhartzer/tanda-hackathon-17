@@ -1,0 +1,24 @@
+service: tanda-17-webhook
+
+frameworkVersion: ">=1.9.0 <2.0.0"
+
+provider:
+  name: aws
+  iamRoleStatements:
+    - Effect: "Allow"
+      Action:
+        - "ec2:*"
+      Resource: "*"
+  runtime: nodejs6.10
+  profile: bernd-personal
+  environment:
+    SEC_GROUP_ID: 'sg-978b82ea'
+    SSH_KEY: 'tanda_ec2'
+
+functions:
+  hook:
+    handler: handler.handler
+    events:
+      - http:
+          path: /hook
+          method: post
